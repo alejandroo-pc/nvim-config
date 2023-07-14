@@ -3,9 +3,9 @@ require("config.lazy")
 vim.cmd.colorscheme("tokyonight")
 
 require("toggleterm").setup({
-	open_mapping = [[<leader>t]], -- Set the open mapping to <leader>t
+	open_mapping = "<leader>tt", -- Set the open mapping to <leader>t
 	start_in_insert = true,
-	insert_mappings = true,
+	insert_mappings = false,
 	persist_size = false,
 	direction = "horizontal",
 })
