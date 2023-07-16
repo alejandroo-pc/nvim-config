@@ -1,6 +1,6 @@
 -- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
-vim.cmd.colorscheme("tokyonight")
+vim.cmd.colorscheme("onedark")
 
 require("toggleterm").setup({
 	open_mapping = "<leader>tt", -- Set the open mapping to <leader>t
