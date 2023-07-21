@@ -17,6 +17,7 @@ return {
 		"<a-7>",
 		"<a-8>",
 	},
+	-- ----------------------------------------------------------------------- }}}
 	-- {{{ Configure harpoon.
 
 	config = function(_, opts)
@@ -50,6 +51,4 @@ return {
 		vim.keymap.set("n", "<a-7>", ui.toggle_quick_menu)
 		vim.keymap.set("n", "<a-8>", mark.add_file)
 	end,
-
-	-- ----------------------------------------------------------------------- }}}
 }
