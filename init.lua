@@ -7,7 +7,7 @@ require("toggleterm").setup({
 	start_in_insert = true,
 	insert_mappings = false,
 	persist_size = false,
-	direction = "horizontal",
+	drection = "horizontal",
 })
 
 -- setting bufferline options
