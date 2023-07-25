@@ -3,10 +3,11 @@
 A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
 Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
 
-
 # Welcome to My Neovim Configuration
 
 This repository contains my Neovim configuration files, which I use to customize my editing experience. You can explore, learn, and adapt these configurations to suit your needs. If you have any questions or suggestions, don't hesitate to reach out!
+
+https://github.com/Alejandro-Patino-Camargo/nvim-config/assets/61527113/8fa8bf0e-22a1-44e1-8d55-11de6b8bf19e
 
 ## Features
 
