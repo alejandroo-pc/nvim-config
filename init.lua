@@ -1,9 +1,8 @@
--- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
-vim.cmd.colorscheme("onedark")
+vim.cmd("colorscheme onedark")
 
 require("toggleterm").setup({
-	open_mapping = "<leader>tt", -- Set the open mapping to <leader>t
+	open_mapping = "<leader>tt",
 	start_in_insert = true,
 	insert_mappings = false,
 	persist_size = false,
@@ -11,7 +10,6 @@ require("toggleterm").setup({
 })
 
 -- setting bufferline options
-vim.opt.termguicolors = true
 require("bufferline").setup({
 	options = {
 		separator_style = "slant",
@@ -45,3 +43,5 @@ autocmd({ "ModeChanged" }, {
 		end
 	end,
 })
+
+require("colorizer").setup()
