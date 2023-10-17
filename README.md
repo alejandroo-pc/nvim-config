@@ -26,9 +26,10 @@ To use these configuration files for your own Neovim setup, follow these steps:
 3. Clone this repository to your Neovim configuration directory:
    ```sh
    git clone https://github.com/your-username/nvim-config.git ~/.config/nvim
+   ```
 
 # Notes
 
 - If this repository is open and actively maintained, I am also actively using this configuration. I encourage you to explore, learn, and modify it to suit your preferences.
 
-- Please note that these configurations reflect my personal preferences and workflow. They may not be a perfect fit for everyone. 
+- Please note that these configurations reflect my personal preferences and workflow. They may not be a perfect fit for everyone.

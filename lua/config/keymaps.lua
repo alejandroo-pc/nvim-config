@@ -1,22 +1,28 @@
+-- Import the required modules
 local keymap = vim.keymap
 
--- use jk to exit insert mode
+-- Exit insert mode with "jk"
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
+
+-- Delete without yanking to register
 keymap.set("n", "x", '"_x')
 
-keymap.set("n", "<C-Up>", "<cmd>resize +2<cr>", { desc = "Increase window height" })
-keymap.set("n", "<C-Down>", "<cmd>resize -2<cr>", { desc = "Decrease window height" })
-keymap.set("n", "<C-Left>", "<cmd>vertical resize -2<cr>", { desc = "Decrease window width" })
-keymap.set("n", "<C-Right>", "<cmd>vertical resize +2<cr>", { desc = "Increase window width" })
+-- Vertical and Horizontal Resize keybindings
+keymap.set("n", "<C-Up>", ":resize +2<CR>", { desc = "Increase window height" })
+keymap.set("n", "<C-Down>", ":resize -2<CR>", { desc = "Decrease window height" })
 
--- window management
-keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" }) -- split window vertically
-keymap.set("n", "<leader>sh", "<C-w>s", { desc = "Split window horizontally" }) -- split window horizontally
-keymap.set("n", "<leader>se", "<C-w>=", { desc = "Make splits equal size" }) -- make split windows equal width & height
-keymap.set("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current split" }) -- close current split window
+-- Horizontal Movement with Control key
+keymap.set("n", "<C-Left>", ":wincmd <CR>", { desc = "Move window to the far left" })
+keymap.set("n", "<C-Right>", ":wincmd >CR>", { desc = "Move window to the far right" })
 
-keymap.set("n", "<leader>to", "<cmd>tabnew<CR>", { desc = "Open new tab" }) -- open new tab
-keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close current tab" }) -- close current tab
-keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" }) --  go to next tab
-keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) --  go to previous tab
-keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" }) --  move current buffer to new tab
+-- Other window management keybindings
+keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" })
+keymap.set("n", "<leader>sh", "<C-w>s", { desc = "Split window horizontally" })
+keymap.set("n", "<leader>se", "<C-w>=", { desc = "Make splits equal size" })
+keymap.set("n", "<leader>sx", ":close<CR>", { desc = "Close current split" })
+
+keymap.set("n", "<leader>to", ":tabnew<CR>", { desc = "Open new tab" })
+keymap.set("n", "<leader>tx", ":tabclose<CR>", { desc = "Close current tab" })
+keymap.set("n", "<leader>tn", ":tabn<CR>", { desc = "Go to next tab" })
+keymap.set("n", "<leader>tp", ":tabp<CR>", { desc = "Go to previous tab" })
+keymap.set("n", "<leader>tf", ":tabnew %<CR>", { desc = "Open current buffer in new tab" })

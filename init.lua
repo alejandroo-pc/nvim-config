@@ -1,18 +1,14 @@
 require("config.lazy")
+
 vim.cmd("colorscheme onedark")
 
-require("toggleterm").setup({
-	open_mapping = "<leader>tt",
-	start_in_insert = true,
-	insert_mappings = false,
-	persist_size = false,
-	drection = "horizontal",
-})
+vim.keymap.set("n", "<leader>rr", "<Plug>RestNvim", { desc = "execute request" })
+vim.keymap.set("n", "<leader>rp", "<Plug>RestNvimPreview", { desc = "preview curl" })
+vim.keymap.set("n", "<leader>rl", "<Plug>RestNvimLast", { desc = "repeat last request" })
 
--- setting bufferline options
 require("bufferline").setup({
 	options = {
-		separator_style = "slant",
+		--separator_style = "slant",
 		always_show_bufferline = true,
 		show_buffer_close_icons = true,
 		show_close_icon = true,
