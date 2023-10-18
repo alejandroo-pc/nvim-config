@@ -1,6 +1,5 @@
 local conform = require("conform")
 
--- Set up the configuration using the setup function
 conform.setup({
 	formatters_by_ft = {
 		javascript = { "prettier" },
@@ -22,10 +21,11 @@ conform.setup({
 	},
 })
 
--- Specify the plugin using LazyVim's syntax
 return {
-	"stevearc/conform.nvim",
-	lazy = true,
-	event = { "BufReadPre", "BufNewFile" }, -- to disable, comment this out
-	-- Note: Avoid setting plugin.config directly for conform.nvim
+	{
+		"stevearc/conform.nvim",
+		lazy = true,
+		event = { "BufReadPre", "BufNewFile" }, -- to disable, comment this out
+		-- Note: Avoid setting plugin.config directly for conform.nvim
+	},
 }
