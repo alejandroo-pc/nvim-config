@@ -1,10 +1,10 @@
 require("config.lazy")
-
 vim.cmd("colorscheme onedark")
 
-vim.keymap.set("n", "<leader>rr", "<Plug>RestNvim", { desc = "execute request" })
-vim.keymap.set("n", "<leader>rp", "<Plug>RestNvimPreview", { desc = "preview curl" })
-vim.keymap.set("n", "<leader>rl", "<Plug>RestNvimLast", { desc = "repeat last request" })
+local opts = { noremap = true, silent = true }
+vim.api.nvim_set_keymap("n", "<leader>rr", "<Plug>RestNvim", opts)
+vim.api.nvim_set_keymap("n", "<leader>rp", "<Plug>RestNvimPreview", opts)
+vim.api.nvim_set_keymap("n", "<leader>rl", "<Plug>RestNvimLast", opts)
 
 require("bufferline").setup({
 	options = {

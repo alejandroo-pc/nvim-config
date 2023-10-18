@@ -27,9 +27,7 @@ return {
 				show_headers = false,
 
 				formatters = {
-					json = function(body)
-						return vim.fn.system({ "jq", "." }, body)
-					end,
+					json = "jq",
 				},
 			},
 
@@ -39,10 +37,5 @@ return {
 			custom_dynamic_variables = {},
 			yank_dry_run = true,
 		})
-
-		local opts = { noremap = true, silent = true }
-		vim.api.nvim_set_keymap("n", "<leader>rr", "<Plug>RestNvim", opts)
-		vim.api.nvim_set_keymap("n", "<leader>rp", "<Plug>RestNvimPreview", opts)
-		vim.api.nvim_set_keymap("n", "<leader>rl", "<Plug>RestNvimLast", opts)
 	end,
 }
