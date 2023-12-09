@@ -25,7 +25,7 @@ return {
 	{
 		"stevearc/conform.nvim",
 		lazy = true,
-		event = { "BufReadPre", "BufNewFile" }, -- to disable, comment this out
+		event = { "BufReadPre", "BufNewFile" },
 		-- Note: Avoid setting plugin.config directly for conform.nvim
 	},
 }
