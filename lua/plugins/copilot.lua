@@ -7,6 +7,7 @@ return {
 		panel = { enabled = true },
 		filetypes = {
 			javascript = true,
+			typescript = true,
 			markdown = true,
 			help = true,
 		},
