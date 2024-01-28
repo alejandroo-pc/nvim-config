@@ -5,7 +5,8 @@ local keymap = vim.keymap
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 
 -- Delete without yanking to register
-keymap.set("n", "x", '"_x')
+keymap.set("n", "x", '"_x') -- delete char without yank
+keymap.set("x", "x", '"_x') -- delete visual selection without yank
 
 -- Vertical and Horizontal Resize keybindings
 keymap.set("n", "<C-Up>", ":resize +2<CR>", { desc = "Increase window height" })
