@@ -1,5 +1,7 @@
 -- Import the required modules
 local keymap = vim.keymap
+keymap.set("n", "<leader>a", ":lua vim.lsp.buf.definition()<CR>")
+keymap.set("n", "<leader>v", ":vsplit | lua vim.lsp.buf.definition()<CR>")
 
 -- Exit insert mode with "jk"
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
