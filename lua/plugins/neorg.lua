@@ -1,10 +1,15 @@
 return {
 	{
+		"vhyrro/luarocks.nvim",
+		priority = 1000, -- We'd like this plugin to load first out of the rest
+		config = true, -- This automatically runs `require("luarocks-nvim").setup()`
+	},
+	{
 		"nvim-neorg/neorg",
-		build = ":Neorg sync-parsers",
+		--build = ":Neorg sync-parsers",
 		lazy = false, -- specify lazy = false because some lazy.nvim distributions set lazy = true by default
-		-- tag = "*",
-		dependencies = { "nvim-lua/plenary.nvim" },
+		dependencies = { "luarocks.nvim" },
+		version = "*",
 		config = function()
 			require("neorg").setup({
 				load = {
