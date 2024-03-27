@@ -1,4 +1,5 @@
 local opt = vim.opt -- for conciseness
+vim.g.lazygit_config = false
 
 -- line numbers
 opt.relativenumber = true -- show relative line numbers
