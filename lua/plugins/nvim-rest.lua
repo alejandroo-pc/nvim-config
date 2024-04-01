@@ -1,4 +1,9 @@
 return {
+	{
+		"vhyrro/luarocks.nvim",
+		priority = 1000,
+		config = true,
+	},
 	"rest-nvim/rest.nvim",
 	requires = { "nvim-lua/plenary.nvim" },
 	commit = "8b62563",

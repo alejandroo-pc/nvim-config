@@ -15,7 +15,7 @@ return {
 				require("dap").adapters["pwa-node"] = {
 					type = "server",
 					host = "localhost",
-					port = "${port}",
+					port = "3000",
 					executable = {
 						command = "node",
 						args = {
@@ -36,10 +36,25 @@ return {
 				})
 
 				for _, language in ipairs({ "typescript", "javascript" }) do
-					require("dap").configurations[language] = {}
+					require("dap").configurations[language] = {
+						{
+							type = "pwa-node",
+							request = "launch",
+							name = "Launch file",
+							program = "${file}",
+							cwd = "${workspaceFolder}",
+						},
+						{
+							type = "pwa-node",
+							request = "attach",
+							name = "Attach",
+							processId = require("dap.utils").pick_process,
+							cwd = "${workspaceFolder}",
+						},
+					}
 				end
 				-- setup dap config by VsCode launch.json file
-				-- require("dap.ext.vscode").load_launchjs()
+				require("dap.ext.vscode").load_launchjs()
 				local dap = require("dap")
 				local dapui = require("dapui")
 				dapui.setup(opts)
