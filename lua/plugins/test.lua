@@ -12,6 +12,11 @@ return {
 				},
 				adapters = {
 					require("neotest-playwright").adapter({
+						playwrightCommand = "npx playwright test",
+						env = { CI = true },
+						cwd = function()
+							return vim.fn.getcwd()
+						end,
 						options = {
 							persist_project_selection = true,
 							enable_dynamic_test_discovery = true,

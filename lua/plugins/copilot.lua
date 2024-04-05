@@ -4,7 +4,7 @@ return {
 	build = ":Copilot auth",
 	opts = {
 		suggestion = { enabled = false },
-		panel = { enabled = true, autorefresh = true },
+		panel = { enabled = false, autorefresh = false },
 		filetypes = {
 			javascript = true,
 			typescript = true,
