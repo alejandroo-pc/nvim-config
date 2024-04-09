@@ -6,7 +6,7 @@ return {
 	},
 	{
 		"nvim-neorg/neorg",
-		--build = ":Neorg sync-parsers",
+		build = ":Neorg sync-parsers",
 		lazy = false, -- specify lazy = false because some lazy.nvim distributions set lazy = true by default
 		dependencies = { "luarocks.nvim" },
 		version = "*",

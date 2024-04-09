@@ -4,43 +4,24 @@ return {
 		priority = 1000,
 		config = true,
 	},
-	"rest-nvim/rest.nvim",
-	requires = { "nvim-lua/plenary.nvim" },
-	commit = "8b62563",
-	config = function()
-		require("rest-nvim").setup({
-
-			-- Open request results in a horizontal split
-			result_split_horizontal = false,
-			-- Keep the http file buffer above|left when split horizontal|vertical
-			result_split_in_place = true,
-			-- Skip SSL verification, useful for unknown certificates
-			skip_ssl_verification = false,
-			-- Encode URL before making request
-			encode_url = true,
-			-- Highlight request on run
-			highlight = {
-				enabled = true,
-				timeout = 150,
-			},
-
-			result = {
-				-- toggle showing URL, HTTP info, headers at top the of result window
-				show_url = true,
-				show_curl_command = false,
-				show_http_info = true,
-				show_headers = false,
-
-				formatters = {
-					json = "jq",
+	{
+		"rest-nvim/rest.nvim",
+		ft = "http",
+		dependencies = { "luarocks.nvim" },
+		config = function()
+			require("rest-nvim").setup({
+				result = {
+					keybinds = {
+						buffer_local = false,
+						prev = ";",
+						next = "'",
+					},
 				},
-			},
-
-			-- Jump to request line on run
-			jump_to_request = false,
-			env_file = ".env",
-			custom_dynamic_variables = {},
-			yank_dry_run = true,
-		})
-	end,
+			})
+			local keymap = vim.keymap
+			keymap.set("n", "<leader>rr", "<cmd>Rest run<cr>", { desc = "Run request under the cursor" })
+			keymap.set("n", "<leader>rl", "<cmd>Rest run last<cr>", { desc = "Re-run latest request" })
+			keymap.set("n", "<leader>rr", "<cmd>Rest run<cr>", { desc = "Run request under the cursor" })
+		end,
+	},
 }
