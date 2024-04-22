@@ -11,4 +11,20 @@ require("bufferline").setup({
 	},
 })
 
+require("neo-tree").setup({
+	window = {
+		position = "right",
+		width = 35,
+	},
+	filesystem = {
+		follow_current_file = {
+			enabled = true,
+		},
+	},
+})
+
+require("notify").setup({
+	top_down = false,
+	render = "minimal",
+})
 require("colorizer").setup()
