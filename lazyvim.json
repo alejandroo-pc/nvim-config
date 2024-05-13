@@ -1,9 +1,8 @@
 {
-  "extras": [
-    "lazyvim.plugins.extras.editor.harpoon2"
-  ],
+  "extras": ["lazyvim.plugins.extras.editor.harpoon2"],
   "news": {
     "NEWS.md": "3314"
   },
   "version": 3
 }
+

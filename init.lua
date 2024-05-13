@@ -27,4 +27,5 @@ require("notify").setup({
 	top_down = false,
 	render = "minimal",
 })
+
 require("colorizer").setup()
