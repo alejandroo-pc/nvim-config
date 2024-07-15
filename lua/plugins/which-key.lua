@@ -22,15 +22,10 @@ return {
 					},
 				},
 
-				key_labels = {},
 				icons = {
 					breadcrumb = "»",
 					separator = "➜",
 					group = "+",
-				},
-				popup_mappings = {
-					scroll_down = "<c-d>",
-					scroll_up = "<c-u>",
 				},
 				layout = {
 					height = { min = 4, max = 25 },
@@ -38,14 +33,8 @@ return {
 					spacing = 3,
 					align = "left",
 				},
-				ignore_missing = false,
-				hidden = { "<silent>", "<cmd>", "<Cmd>", "<CR>", "call", "lua", "^:", "^ " },
 				show_help = true, -- Set this to true to show help when the popup is visible
 				triggers = "auto",
-				triggers_blacklist = {
-					i = { "j", "k" },
-					v = { "j", "k" },
-				},
 				mappings = {
 					t = {
 						name = "Terminal",
