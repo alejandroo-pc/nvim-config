@@ -4,6 +4,10 @@ return {
 		dependencies = {
 			"thenbe/neotest-playwright",
 			"haydenmeade/neotest-jest",
+			"nvim-neotest/nvim-nio",
+			"nvim-lua/plenary.nvim",
+			"antoinemadec/FixCursorHold.nvim",
+			"nvim-treesitter/nvim-treesitter",
 		},
 		lazy = false,
 		config = function()
@@ -16,6 +20,9 @@ return {
 						options = {
 							persist_project_selection = true,
 							enable_dynamic_test_discovery = true,
+						},
+						discovery = {
+							enabled = false,
 						},
 						env = { CI = true },
 						cwd = function()
