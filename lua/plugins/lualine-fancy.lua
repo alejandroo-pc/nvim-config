@@ -24,10 +24,10 @@ return {
 				},
 				lualine_c = {
 					{
-						function()
-							return require("auto-session.lib").current_session_name(true)
-						end,
-
+						-- function()
+						-- 	return require("auto-session.lib").current_session_name(true)
+						-- end,
+						--
 						-- "fancy_cwd",
 						-- substitute_home = true,
 					},
