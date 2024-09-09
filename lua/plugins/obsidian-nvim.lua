@@ -1,7 +1,7 @@
 return {
 	"epwalsh/obsidian.nvim",
 	version = "*", -- recommended, use latest release instead of latest commit
-	lazy = false,
+	lazy = true,
 	ft = "markdown",
 	-- Replace the above line with this if you only want to load obsidian.nvim for markdown files in your vault:
 	-- event = {
@@ -16,9 +16,6 @@ return {
 		"nvim-lua/plenary.nvim",
 		"hrsh7th/nvim-cmp",
 	},
-
-	vim.opt.conceallevel == 1,
-	ui = { enable = false },
 
 	opts = {
 		workspaces = {
@@ -46,5 +43,7 @@ return {
 			date_format = "%Y-%m-%d-%a",
 			time_format = "%H:%M",
 		},
+		vim.opt.conceallevel == 1,
+		ui = { enable = false },
 	},
 }
