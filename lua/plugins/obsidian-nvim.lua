@@ -1,7 +1,7 @@
 return {
 	"epwalsh/obsidian.nvim",
 	version = "*", -- recommended, use latest release instead of latest commit
-	lazy = true,
+	lazy = false,
 	ft = "markdown",
 	-- Replace the above line with this if you only want to load obsidian.nvim for markdown files in your vault:
 	-- event = {
@@ -11,10 +11,15 @@ return {
 	--   "BufReadPre path/to/my-vault/*.md",
 	--   "BufNewFile path/to/my-vault/*.md",
 	-- },
+	--
 	dependencies = {
-		-- Required.
 		"nvim-lua/plenary.nvim",
+		"hrsh7th/nvim-cmp",
 	},
+
+	vim.opt.conceallevel == 1,
+	ui = { enable = false },
+
 	opts = {
 		workspaces = {
 			{
@@ -27,6 +32,19 @@ return {
 			},
 		},
 
-		-- see below for full list of options 👇
+		date_format = "%Y-%m-%d",
+		notes_subdir = "01_CTD",
+		new_notes_location = "notes_subdir",
+
+		completion = {
+			nvim_cmp = true,
+			min_chars = 4,
+		},
+
+		templates = {
+			folder = "templates",
+			date_format = "%Y-%m-%d-%a",
+			time_format = "%H:%M",
+		},
 	},
 }
