@@ -1,5 +1,7 @@
 require("config.lazy")
 
+vim.g.autoformat = false
+
 require("bufferline").setup({
 	options = {
 		--separator_style = "slant",

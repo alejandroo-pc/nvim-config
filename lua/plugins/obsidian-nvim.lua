@@ -1,7 +1,7 @@
 return {
 	"epwalsh/obsidian.nvim",
 	version = "*", -- recommended, use latest release instead of latest commit
-	lazy = true,
+	lazy = false,
 	ft = "markdown",
 	-- Replace the above line with this if you only want to load obsidian.nvim for markdown files in your vault:
 	-- event = {
@@ -45,5 +45,10 @@ return {
 		},
 		vim.opt.conceallevel == 1,
 		ui = { enable = false },
+	},
+	keys = {
+		{ "<leader>ns", "<cmd>ObsidianQuickSwitch<CR>", desc = "Obsidin Search Note" },
+		{ "<leader>nN", "<cmd>ObsidinNew<CR>", desc = "Obsidian New Note" },
+		{ "<leader>nT", "<cmd>ObsidianNewFromTemplate<CR>", desc = "Obsidian New Note Template" },
 	},
 }
