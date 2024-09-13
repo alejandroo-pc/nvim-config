@@ -9,6 +9,7 @@ return {
 			"antoinemadec/FixCursorHold.nvim",
 			"nvim-treesitter/nvim-treesitter",
 		},
+		version = "*",
 		lazy = false,
 		config = function()
 			require("neotest").setup({

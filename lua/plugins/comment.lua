@@ -1,5 +1,7 @@
 return {
 	"numToStr/Comment.nvim",
+	version = "*",
+	lazy = false,
 	opts = {
 		{
 			---Add a space b/w comment and the line
@@ -45,5 +47,4 @@ return {
 			post_hook = nil,
 		},
 	},
-	lazy = false,
 }

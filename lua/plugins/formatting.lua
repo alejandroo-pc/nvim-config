@@ -25,6 +25,7 @@ return {
 	{
 		"stevearc/conform.nvim",
 		lazy = true,
+		version = "*",
 		event = { "BufReadPre", "BufNewFile" },
 		-- Note: Avoid setting plugin.config directly for conform.nvim
 	},
