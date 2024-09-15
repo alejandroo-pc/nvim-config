@@ -29,4 +29,5 @@ require("notify").setup({
 	render = "minimal",
 })
 
+vim.cmd.colorscheme("tokyonight-moon")
 require("colorizer").setup()

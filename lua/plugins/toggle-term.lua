@@ -2,7 +2,6 @@ return {
 	{
 		"akinsho/toggleterm.nvim",
 		version = "*",
-		lazy = true,
 
 		config = function()
 			-- Load required module
