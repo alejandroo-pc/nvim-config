@@ -39,5 +39,4 @@ return {
 			end
 		end,
 	},
-	-- Add other plugins or configurations specific to LazyVim here
 }

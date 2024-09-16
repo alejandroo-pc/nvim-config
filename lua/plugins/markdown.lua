@@ -10,6 +10,8 @@ return {
 		heading = {
 			enabled = true,
 			sign = false,
+			width = "block",
+			min_width = 40,
 		},
 	},
 }
