@@ -30,4 +30,3 @@ require("notify").setup({
 })
 
 vim.cmd.colorscheme("tokyonight-moon")
-require("colorizer").setup()
