@@ -21,11 +21,11 @@ return {
 		workspaces = {
 			{
 				name = "personal",
-				path = "/Users/alejandro/workspace/ale/obsidian/00_personal",
+				path = "/Users/alejandro/Library/Mobile Documents/iCloud~md~obsidian/Documents/workshop",
 			},
 			{
 				name = "work",
-				path = "/Users/alejandro/workspace/ale/obsidian/01_CTD",
+				path = "/Users/alejandro/Library/Mobile Documents/iCloud~md~obsidian/Documents/workshop/01_CTD",
 			},
 		},
 
