@@ -17,7 +17,7 @@ return {
 	config = function()
 		local auto_session = require("auto-session")
 		auto_session.setup({
-			--auto_save_enabled = true,
+			auto_save_enabled = true,
 			auto_session_suppress_dirs = { "~/", "~/Dev/", "~/Downloads", "~/Documents", "~/Desktop/" },
 			session_lens = {
 				load_on_setup = true,
