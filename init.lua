@@ -1,5 +1,4 @@
 require("config.lazy")
-
 vim.g.autoformat = false
 
 require("bufferline").setup({
@@ -41,6 +40,5 @@ require("transparent").clear_prefix("lualine")
 require("transparent").clear_prefix("Whichkey")
 require("transparent").clear_prefix("Telescope")
 require("transparent").clear_prefix("mason")
-require("transparent").clear_prefix("notify")
 
 vim.cmd.colorscheme("tokyonight-moon")

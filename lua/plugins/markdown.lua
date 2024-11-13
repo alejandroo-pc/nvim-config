@@ -1,6 +1,7 @@
 return {
 	"MeanderingProgrammer/render-markdown.nvim",
 	version = "*",
+	lazy = false,
 
 	-- Step 1: Define dependencies
 	dependencies = {
