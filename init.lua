@@ -24,11 +24,6 @@ require("neo-tree").setup({
 	},
 })
 
-require("notify").setup({
-	top_down = false,
-	render = "minimal",
-})
-
 require("transparent").setup({
 	-- table: additional groups that should be cleared
 	extra_groups = {
