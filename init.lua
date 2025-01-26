@@ -23,5 +23,4 @@ require("neo-tree").setup({
 	},
 })
 
-
 vim.cmd.colorscheme("tokyonight-moon")
