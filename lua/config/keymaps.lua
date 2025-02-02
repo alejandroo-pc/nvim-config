@@ -15,8 +15,8 @@ keymap.set("n", "<C-Up>", ":resize +2<CR>", { desc = "Increase window height" })
 keymap.set("n", "<C-Down>", ":resize -2<CR>", { desc = "Decrease window height" })
 
 -- Horizontal Movement with Control key
-keymap.set("n", "<C-]>", ":vertical resize -3<CR>", { desc = "Decrease window width" })
-keymap.set("n", "<C-[>", ":vertical resize +3<CR>", { desc = "Increase window width" })
+keymap.set("n", "<C-]>", ":vertical resize -3<CR>", { silent = true, desc = "Decrease window width" })
+keymap.set("n", "<C-[>", ":vertical resize +3<CR>", { silent = true, desc = "Increase window width" })
 
 -- Other window management keybindings
 keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" })
