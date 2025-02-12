@@ -1,5 +1,4 @@
 require("config.lazy")
-vim.g.autoformat = false
 
 require("bufferline").setup({
 	options = {
@@ -66,4 +65,3 @@ dap.configurations.javascript = {
 	},
 }
 
-vim.cmd.colorscheme("tokyonight-moon")
