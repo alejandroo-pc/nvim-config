@@ -64,4 +64,3 @@ dap.configurations.javascript = {
 		},
 	},
 }
-
