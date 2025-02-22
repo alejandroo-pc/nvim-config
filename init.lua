@@ -12,6 +12,7 @@ require("neo-tree").setup({
 	},
 	vim.cmd([[
   highlight NeoTreeNormal guibg=#222437
+  highlight NeoTreeNormalNC guibg=#222437
 ]]),
 })
 
