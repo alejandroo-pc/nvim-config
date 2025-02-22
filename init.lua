@@ -10,6 +10,9 @@ require("neo-tree").setup({
 			enabled = true,
 		},
 	},
+	vim.cmd([[
+  highlight NeoTreeNormal guibg=#222437
+]]),
 })
 
 local dap = require("dap")
