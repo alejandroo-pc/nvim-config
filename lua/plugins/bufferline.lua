@@ -3,13 +3,15 @@ return {
 	version = "*",
 	dependencies = { "nvim-tree/nvim-web-devicons" },
 	config = function()
-		require("bufferline").setup({
+		local bufferline = require("bufferline")
+		bufferline.setup({
 			options = {
-				-- separator_style = "slant",
+				style_preset = bufferline.style_preset.minimal,
 				always_show_bufferline = true,
-				show_buffer_close_icons = true,
+				show_buffer_close_icons = false,
 				show_close_icon = true,
 				color_icons = true,
+				tab_size = 13,
 			},
 		})
 
