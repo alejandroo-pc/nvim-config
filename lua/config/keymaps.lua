@@ -9,6 +9,9 @@ keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 -- Delete without yanking to register
 keymap.set("n", "x", '"_x') -- delete char without yank
 keymap.set("x", "x", '"_x') -- delete visual selection without yank
+keymap.set("n", "dd", '"_dd') -- delete line without yank
+keymap.set("x", "dd", '"_dd') -- delete visual line without yank
+keymap.set("x", "p", '"_dP') -- paste in visual mode without overwriting register
 
 -- Vertical and Horizontal Resize keybindings
 keymap.set("n", "<C-Up>", ":resize +2<CR>", { desc = "Increase window height" })
