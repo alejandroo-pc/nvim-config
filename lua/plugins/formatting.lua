@@ -13,6 +13,7 @@ conform.setup({
 		yaml = { "prettier" },
 		markdown = { "prettier" },
 		lua = { "stylua" },
+		http = { "kulala-fmt" },
 	},
 	format_on_save = {
 		lsp_fallback = true,
