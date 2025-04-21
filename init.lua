@@ -1,5 +1,6 @@
 require("config.lazy")
 
+vim.cmd("colorscheme poimandres")
 require("neo-tree").setup({
 	window = {
 		position = "right",
