@@ -9,7 +9,7 @@ return {
 		},
 		opts = {
 			options = {
-				theme = "ayu_mirage",
+				theme = "nightfly",
 				component_separators = { left = "│", right = "│" },
 				section_separators = { left = "", right = "" },
 				globalstatus = true,
