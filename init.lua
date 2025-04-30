@@ -1,6 +1,11 @@
 require("config.lazy")
 
 vim.cmd("colorscheme poimandres")
+local customColor = "#1A1E29"
+
+vim.api.nvim_set_hl(0, "WinSeparator", { fg = customColor })
+vim.api.nvim_set_hl(0, "LspFloatWinBorder", { fg = customColor })
+
 require("neo-tree").setup({
 	window = {
 		position = "right",
