@@ -6,14 +6,18 @@ return {
 		local bufferline = require("bufferline")
 		bufferline.setup({
 			options = {
-				style_preset = bufferline.style_preset.minimal,
+				sort_by = "insert_after_current",
+				diagnostics = "nvim_lsp",
 				always_show_bufferline = true,
 				show_buffer_close_icons = false,
-				show_close_icon = true,
+				show_close_icon = false,
 				color_icons = true,
 				tab_size = 13,
+				style_preset = bufferline.style_preset.minimal,
 			},
 		})
+
+		vim.api.nvim_set_hl(0, "BufferLineIndicatorSelected", { underline = false })
 
 		local keymap = vim.api.nvim_set_keymap
 
