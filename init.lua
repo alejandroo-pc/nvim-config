@@ -1,5 +1,5 @@
 require("config.lazy")
-
+vim.opt.termguicolors = true
 vim.cmd("colorscheme poimandres")
 local customColor = "#1A1E29"
 
