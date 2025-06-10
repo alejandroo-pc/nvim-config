@@ -1,6 +1,6 @@
 require("config.lazy")
 vim.opt.termguicolors = true
-vim.cmd("colorscheme poimandres")
+vim.cmd("colorscheme default")
 local customColor = "#1A1E29"
 
 vim.api.nvim_set_hl(0, "WinSeparator", { fg = customColor })
