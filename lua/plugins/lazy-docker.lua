@@ -1,6 +1,7 @@
 return {
 	"mgierada/lazydocker.nvim",
 	dependencies = { "akinsho/toggleterm.nvim" },
+	lazy = false,
 	config = function()
 		require("lazydocker").setup({
 			border = "shadow", -- valid options are "single" | "double" | "shadow" | "curved"
