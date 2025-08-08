@@ -9,7 +9,7 @@ vim.api.nvim_set_hl(0, "LspFloatWinBorder", { fg = customColor })
 require("neo-tree").setup({
 	window = {
 		position = "right",
-		width = 35,
+		width = 45,
 	},
 	filesystem = {
 		follow_current_file = {
