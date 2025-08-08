@@ -14,8 +14,8 @@ keymap.set("x", "dd", '"_dd') -- delete visual line without yank
 keymap.set("x", "p", '"_dP') -- paste in visual mode without overwriting register
 
 -- Vertical and Horizontal Resize keybindings
-keymap.set("n", "<C-Up>", ":resize +2<CR>", { desc = "Increase window height" })
-keymap.set("n", "<C-Down>", ":resize -2<CR>", { desc = "Decrease window height" })
+keymap.set("n", "<C-Up>", ":resize +2<CR>", { silent = true, desc = "Increase window height" })
+keymap.set("n", "<C-Down>", ":resize -2<CR>", { silent = true, desc = "Decrease window height" })
 
 -- Horizontal Movement with Control key
 keymap.set("n", "<C-]>", ":vertical resize -3<CR>", { silent = true, desc = "Decrease window width" })
