@@ -12,6 +12,14 @@ require("neo-tree").setup({
 		width = 45,
 	},
 	filesystem = {
+		components = {
+			icon = function(config, node, state)
+				if node.type == "file"  then
+					return {}
+				end
+				return require("neo-tree.sources.common.components").icon(config, node, state)
+			end,
+		},
 		follow_current_file = {
 			enabled = true,
 		},
