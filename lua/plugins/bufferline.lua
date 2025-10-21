@@ -17,7 +17,6 @@ return {
 				style_preset = bufferline.style_preset.minimal,
 			},
 		})
-
 		vim.api.nvim_set_hl(0, "BufferLineIndicatorSelected", { underline = false })
 
 		local keymap = vim.api.nvim_set_keymap

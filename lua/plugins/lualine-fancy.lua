@@ -25,6 +25,7 @@ return {
 				},
 				lualine_c = {
 					{
+						"fancy_diff",
 						-- function()
 						-- 	return require("auto-session.lib").current_session_name(true)
 						-- end,
@@ -33,15 +34,15 @@ return {
 						-- substitute_home = true,
 					},
 				},
+
 				lualine_x = {
-					{ "fancy_diff" },
 					{ "fancy_macro" },
 					{ "fancy_diagnostics" },
 					{ "fancy_searchcount" },
 					{ "fancy_location" },
 				},
 				lualine_y = {
-					{ "fancy_filetype", ts_icon = "" },
+					-- { "fancy_filetype", ts_icon = "" },
 				},
 				lualine_z = {},
 			},
