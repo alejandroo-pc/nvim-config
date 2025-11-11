@@ -1,10 +1,11 @@
 require("config.lazy")
 vim.opt.termguicolors = true
-vim.cmd("colorscheme poimandres")
-local customColor = "#1A1E29"
+vim.cmd("colorscheme tokyonight-night")
+local customColor = "#1A1B27"
 
 vim.api.nvim_set_hl(0, "WinSeparator", { fg = customColor })
 vim.api.nvim_set_hl(0, "LspFloatWinBorder", { fg = customColor })
+vim.api.nvim_set_hl(0, "NeoTreeNormal", { bg = customColor })
 
 require("neo-tree").setup({
 	window = {
