@@ -11,11 +11,22 @@ require("neo-tree").setup({
 	window = {
 		position = "right",
 		width = 45,
+		mappings = {
+			["P"] = {
+				"toggle_preview",
+				config = {
+					use_float = false,
+					 use_image_nvim = true,
+					-- use_snacks_image = true,
+					-- title = 'Neo-tree Preview',
+				},
+			},
+		},
 	},
 	filesystem = {
 		components = {
 			icon = function(config, node, state)
-				if node.type == "file"  then
+				if node.type == "file" then
 					return {}
 				end
 				return require("neo-tree.sources.common.components").icon(config, node, state)
