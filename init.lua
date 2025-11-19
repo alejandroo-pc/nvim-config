@@ -56,6 +56,12 @@ dap.adapters["pwa-node"] = {
 	},
 }
 
+dap.adapters.chrome = {
+	type = "executable",
+	command = "node",
+	args = { "/Users/alejandro/workspace/cellar/vscode-chrome-debug/src/chromeDebug.js" },
+}
+
 dap.configurations.javascript = {
 	{
 		name = "Next.js: debug server-side",
