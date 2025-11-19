@@ -1,6 +1,6 @@
 require("config.lazy")
 vim.opt.termguicolors = true
-vim.cmd("colorscheme tokyonight-night")
+vim.cmd("colorscheme tokyonight-moon")
 local customColor = "#1A1B27"
 
 vim.api.nvim_set_hl(0, "WinSeparator", { fg = customColor })
@@ -16,7 +16,7 @@ require("neo-tree").setup({
 				"toggle_preview",
 				config = {
 					use_float = false,
-					 use_image_nvim = true,
+					use_image_nvim = true,
 					-- use_snacks_image = true,
 					-- title = 'Neo-tree Preview',
 				},
