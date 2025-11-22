@@ -1,6 +1,6 @@
 require("config.lazy")
 vim.opt.termguicolors = true
-vim.cmd("colorscheme tokyonight-moon")
+vim.cmd("colorscheme catppuccin-macchiato")
 local customColor = "#1A1B27"
 
 vim.api.nvim_set_hl(0, "WinSeparator", { fg = customColor })
@@ -38,12 +38,12 @@ require("neo-tree").setup({
 	},
 })
 
--- diff colorscheme
-vim.api.nvim_set_hl(0, "DiffAdd", { bg = "#20303b" })
-vim.api.nvim_set_hl(0, "DiffDelete", { bg = "#37222c" })
-vim.api.nvim_set_hl(0, "DiffChange", { bg = "#1f2231" })
-vim.api.nvim_set_hl(0, "DiffText", { bg = "#394b70" })
-
+-- -- diff colorscheme
+-- vim.api.nvim_set_hl(0, "DiffAdd", { bg = "#20303b" })
+-- vim.api.nvim_set_hl(0, "DiffDelete", { bg = "#37222c" })
+-- vim.api.nvim_set_hl(0, "DiffChange", { bg = "#1f2231" })
+-- vim.api.nvim_set_hl(0, "DiffText", { bg = "#394b70" })
+--
 local dap = require("dap")
 
 dap.adapters["pwa-node"] = {
