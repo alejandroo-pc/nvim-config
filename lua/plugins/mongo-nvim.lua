@@ -1,7 +1,9 @@
 return {
 	"kopecmaciej/vi-mongo.nvim",
 	config = function()
-		require("vi-mongo").setup()
+		require("vi-mongo").setup({
+      persist = true,
+    })
 	end,
 	cmd = { "ViMongo" },
 	keys = {
