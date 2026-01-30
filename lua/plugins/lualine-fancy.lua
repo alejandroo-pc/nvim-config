@@ -8,7 +8,7 @@ return {
 		},
 		opts = {
 			options = {
-				theme = "ayu_mirage",
+				theme = "ayu_dark",
 				component_separators = { left = "│", right = "│" },
 				section_separators = { left = "", right = "" },
 				globalstatus = true,
