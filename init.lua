@@ -1,4 +1,6 @@
 require("config.lazy")
+vim.g.lazygit_config = false
+
 vim.opt.termguicolors = true
 vim.cmd("colorscheme default")
 local customColor = "#1A1B27"
