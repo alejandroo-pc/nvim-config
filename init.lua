@@ -10,6 +10,9 @@ vim.api.nvim_set_hl(0, "LspFloatWinBorder", { fg = customColor })
 -- vim.api.nvim_set_hl(0, "NeoTreeNormal", { bg = "#23273C"})
 -- vim.api.nvim_set_hl(0, "NeoTreeNormalNC", { bg = "#23273C" })
 
+require("kulala").setup({
+	default_env = "dev",
+})
 
 require("neo-tree").setup({
 	window = {
