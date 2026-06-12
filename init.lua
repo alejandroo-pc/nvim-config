@@ -2,13 +2,14 @@ require("config.lazy")
 vim.g.lazygit_config = false
 
 vim.opt.termguicolors = true
-vim.cmd("colorscheme default")
-local customColor = "#1A1B27"
+vim.cmd("colorscheme evergarden")
+-- local customColor = "#1A1B27"
+local customColor = "#232A2E"
 
 vim.api.nvim_set_hl(0, "WinSeparator", { fg = customColor })
 vim.api.nvim_set_hl(0, "LspFloatWinBorder", { fg = customColor })
--- vim.api.nvim_set_hl(0, "NeoTreeNormal", { bg = "#23273C"})
--- vim.api.nvim_set_hl(0, "NeoTreeNormalNC", { bg = "#23273C" })
+vim.api.nvim_set_hl(0, "NeoTreeNormal", { bg = customColor })
+vim.api.nvim_set_hl(0, "NeoTreeNormalNC", { bg = customColor })
 
 require("kulala").setup({
 	default_env = "dev",
